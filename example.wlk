@@ -47,7 +47,7 @@ object pepon {
 
 	var energia = 30
 
-
+    //getter
 	method energia () {
 		return energia
 	}
@@ -78,9 +78,12 @@ object roque {
 		aveActual.comer(comida)
 		cenas = cenas +1
 	}
-
+     
+	//getter 
     method cenas (){
 		return cenas
 	}
 }
+
+
 
