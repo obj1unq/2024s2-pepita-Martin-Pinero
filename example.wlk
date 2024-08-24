@@ -1,7 +1,7 @@
 object pepita {
 	var energia = 100
 	
-	method comer(comida) {
+	method comer (comida) {
 		energia = energia + comida.energiaQueAporta()
 	}
 	
@@ -60,8 +60,21 @@ object pepon {
 		energia = energia - 20 - (distancia * 2)
 	}
 
-	
+
 
 }
 
-// test push
+object roque {
+
+	var aveActual = pepita 
+
+	method actualizarAve (nuevaAve){
+		aveActual = nuevaAve
+	}
+
+	method alimentar (comida){
+		aveActual.comer(comida)
+	}
+
+
+}
