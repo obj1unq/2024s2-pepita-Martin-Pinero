@@ -76,5 +76,5 @@ object roque {
 		aveActual.comer(comida)
 	}
 
-
 }
+
