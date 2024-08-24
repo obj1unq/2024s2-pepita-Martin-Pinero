@@ -67,14 +67,20 @@ object pepon {
 object roque {
 
 	var aveActual = pepita 
+	var cenas = 0
 
 	method actualizarAve (nuevaAve){
 		aveActual = nuevaAve
+		cenas = 0
 	}
 
 	method alimentar (comida){
 		aveActual.comer(comida)
+		cenas = cenas +1
 	}
 
+    method cenas (){
+		return cenas
+	}
 }
 
